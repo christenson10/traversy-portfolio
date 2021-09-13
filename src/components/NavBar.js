@@ -11,7 +11,7 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-black"
-            className="inline-flex items-center py-6 px-3 mr-4 text-black-300 hover:text-yellow-300 text-2xl font-bold tracking-widest"
+            className="inline-flex items-center py-6 px-3 mr-4 text-black-300 hover:text-yellow-300 text-3xl font-bold"
           >
             ALEX CHRISTENSON
           </NavLink>
