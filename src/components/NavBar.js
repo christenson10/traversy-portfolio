@@ -16,59 +16,59 @@ export default function NavBar() {
             ALEX CHRISTENSON
           </NavLink>
           <NavLink
+            to="about"
+            className="inline-flex items-center py-3 px-3 my-8 rounded text-black-100 hover:text-yellow-300 font-bold"
+            activeClassName="text-black-100 bg-yellow-300"
+          >
+            About.
+          </NavLink>
+          <NavLink
             to="post"
             className="inline-flex items-center py-3 px-3 my-8 rounded text-black-100 hover:text-yellow-300 font-bold"
             activeClassName="text-black-100 bg-yellow-300"
           >
-            Blog Posts
+            Logbook.
           </NavLink>
           <NavLink
             to="project"
             className="inline-flex items-center py-3 px-3 my-8 rounded text-black-100 hover:text-yellow-300 font-bold"
             activeClassName="text-black-100 bg-yellow-300"
           >
-            Projects
-          </NavLink>
-          <NavLink
-            to="about"
-            className="inline-flex items-center py-3 px-3 my-8 rounded text-black-100 hover:text-yellow-300 font-bold"
-            activeClassName="text-black-100 bg-yellow-300"
-          >
-            About Me!
+            Projects.
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon
             url="https://www.linkedin.com/in/christenson10/"
-            className="mr-4"
+            className="mr-4 hover:bg-yellow-300 rounded focus:outline-none focus:ring-4"
             target="-blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
             url="https://github.com/christenson10"
-            className="mr-4"
+            className="mr-4 hover:bg-yellow-300 rounded focus:outline-none focus:ring-4"
             target="-blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
             url="https://www.instagram.com/christenson10"
-            className="mr-4"
+            className="mr-4 hover:bg-yellow-300 rounded focus:outline-none focus:ring-4"
             target="-blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
             url="https://open.spotify.com/user/djohomum3yhyybr22q9s7ayry?si=c291da255cee4356"
-            className="mr-4"
+            className="mr-4 hover:bg-yellow-300 rounded focus:outline-none focus:ring-4"
             target="-blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
-                    <SocialIcon
+          <SocialIcon
             url="mailto:christenson10@gmail.com"
-            className="mr-4"
+            className="mr-4 hover:bg-yellow-300 rounded focus:outline-none focus:ring-4"
             target="-blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
