@@ -28,11 +28,7 @@ export default function About() {
 
   return (
     <main>
-      <img
-        src={mountainsphoto}
-        alt="Mountain Photo"
-        className="absolute w-full"
-      />
+      <img src={mountainsphoto} alt="Mountains" className="absolute w-full" />
       <div className="p-10 items-center justify-center h-screen lg:pt-48 container mx-auto relative">
         <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-14">
           <img
@@ -43,14 +39,16 @@ export default function About() {
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-6xl text-green-300 mb-4">
               Hey there. I'm {""}
-              <span className="text-green-100">{author.name}</span>
+              <span className="text-green-100">
+                {author.name}
+              </span>
             </h1>
             <div className="prose lg:prose-xl text-white">
               <BlockContent
                 blocks={author.bio}
                 projectId="yfjejyjc"
                 dataset="production"
-/>
+              />
             </div>
           </div>
         </section>
