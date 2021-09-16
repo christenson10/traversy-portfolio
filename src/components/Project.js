@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import sanityClient from "../client.js";
 
 export default function Project() {
@@ -22,17 +23,17 @@ export default function Project() {
   }, []);
 
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="bg-white-100 min-h-screen p-5">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">Projects.</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my projects page!
+        <h1 className="text-3xl flex justify-center p-1">Projects.</h1>
+        <h2 className="text-md text-gray-600 flex justify-center mb-6">
+          Check out my recent projects below.
         </h2>
         <section className="grid grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
-                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
+              <article className="pl-2 block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-yellow-300">
+                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-yellow-300 p-3">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -42,33 +43,22 @@ export default function Project() {
                     {project.title}
                   </a>
                 </h3>
-                <div className="text-gray-500 text-xs space-x-4">
-                  <span>
+                <div className="text-gray-500 text-sm space-x-4 p-3">
+                  {/* <span>
                     <strong className="font-bold">Finished on</strong>:{" "}
                     {new Date(project.date).toLocaleDateString()}
-                  </span>
+                  </span> */}
                   <span>
-                    <strong className="font-bold">Company</strong>:
+                    <strong className="font-bold">Type</strong>:{" "}
                     {project.place}
                   </span>
                   <span>
-                    <strong className="font-bold">Type</strong>:{" "}
-                    {project.projectType}
-                  </span>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                    <strong className="font-bold">Description</strong>:{" "}
                     {project.description}
-                  </p>
-                  <a
-                    href={project.length}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
-                  >
-                    View The Project{" "}
-                    <span role="img" aria-label="right pointer">
-                      👉
-                    </span>
-                  </a>
+                  </span>
+                  {/* <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                    {project.description}
+                  </p> */}
                 </div>
               </article>
             ))}

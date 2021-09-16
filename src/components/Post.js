@@ -25,11 +25,11 @@ export default function Post() {
   }, []);
 
   return (
-    <main className="bg-white-100 min-h-screen p-12">
+    <main className="bg-white-100 min-h-screen p-5">
       <section className="container mx-auto">
-        <h1 className="text-3xl flex justify-center">Logbook.</h1>
-        <h2 className="text-md text-gray-600 flex justify-center mb-12">
-          Good to see you.
+        <h1 className="text-3xl flex justify-center p-1">Captain's Logbook.</h1>
+        <h2 className="text-md text-gray-600 flex justify-center mb-6">
+          Ramblings. Musings. Life.
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
@@ -40,7 +40,7 @@ export default function Post() {
                   key={post.slug.current}
                 >
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-yellow-300"
+                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-yellow-300 hover:shadow-2xl"
                     key={index}
                   >
                     <img
