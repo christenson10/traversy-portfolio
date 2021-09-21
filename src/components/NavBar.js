@@ -16,21 +16,21 @@ export default function NavBar() {
             ALEX CHRISTENSON
           </NavLink>
           <NavLink
-            to="about"
+            to="/about"
             className="inline-flex items-center py-3 px-3 my-8 rounded text-black-100 hover:text-yellow-300 font-bold"
             activeClassName="text-black-100 bg-yellow-300"
           >
             About.
           </NavLink>
           <NavLink
-            to="post"
+            to="/post"
             className="inline-flex items-center py-3 px-3 my-8 rounded text-black-100 hover:text-yellow-300 font-bold"
             activeClassName="text-black-100 bg-yellow-300"
           >
             Logbook.
           </NavLink>
           <NavLink
-            to="project"
+            to="/project"
             className="inline-flex items-center py-3 px-3 my-8 rounded text-black-100 hover:text-yellow-300 font-bold"
             activeClassName="text-black-100 bg-yellow-300"
           >
