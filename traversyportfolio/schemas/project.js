@@ -19,6 +19,14 @@ export default {
         name: "description",
         type: "text",
     },
+    // {
+    //     name: 'projectImage',
+    //     title: 'Project image',
+    //     type: 'image',
+    //     options: {
+    //       hotspot: true,
+    //     },
+    // },
     {
         name: "projectType",
         title: "Project Type",
@@ -47,5 +55,11 @@ export default {
         layout: "tags",
     },
 },
-    ],
+    // ],
+    // preview: {
+    //     select: {
+    //       title: 'name',
+    //       media: 'image',
+    //     },
+    //   },
 };

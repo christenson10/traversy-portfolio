@@ -25,11 +25,13 @@ export default function Project() {
   return (
     <main className="bg-white-100 min-h-screen p-5">
       <section className="container mx-auto">
-        <h1 className="text-3xl flex justify-center p-1">Projects.</h1>
+        <h1 className="text-3xl font-bold flex justify-center p-1">
+          Projects.
+        </h1>
         <h2 className="text-md text-gray-600 flex justify-center mb-6">
           Check out my recent projects below.
         </h2>
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
               <article className="pl-2 block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-yellow-300">
@@ -49,8 +51,7 @@ export default function Project() {
                     {new Date(project.date).toLocaleDateString()}
                   </span> */}
                   <span>
-                    <strong className="font-bold">Type</strong>:{" "}
-                    {project.place}
+                    <strong className="font-bold">Type</strong>: {project.place}
                   </span>
                   <span>
                     <strong className="font-bold">Description</strong>:{" "}

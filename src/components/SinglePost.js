@@ -38,12 +38,12 @@ export default function Post() {
   if (!singlePost) return <div>Loading...</div>;
 
   return (
-    <main className="bg-gray-200 min-h-screen p-12">
-      <article className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+    <main className="bg-white-100 min-h-screen p-12">
+      <article className="container shadow-lg mx-auto bg-yellow-300 rounded-lg">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
             <div className="bg-white bg-opacity-75 rounded p-12">
-              <h1 className="cursive text-3xl lg:text-6xl mb-4">{singlePost.title}</h1>
+              <h1 className="cursive text-3md lg:text-6md mb-4">{singlePost.title}</h1>
               <div className="flex justify-center text-gray-800">
                 <img
                   src={urlFor(singlePost.authorImage).url()}
