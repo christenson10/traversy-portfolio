@@ -29,21 +29,21 @@ export default function About() {
   return (
     <main>
       <img src={mountainsphoto} alt="Mountains" className="absolute object-cover w-full h-full" />
-      <div className="p-4 items-center justify-center h-screen lg:pt-48 container mx-auto relative">
-        <section className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-2xl lg:flex p-14">
+      <div className="p-4 items-center justify-center h-screen lg:pt-24 container mx-auto relative">
+        <section className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-2xl lg:flex p-8">
           <img
             src={urlFor(author.authorImage).url()}
-            className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
+            className="rounded w-32 h-32 lg:w-60 lg:h-60 mr-8"
             alt={author.name}
           />
           <div className="text-lg flex flex-col justify-center">
-            <h1 className="text-6xl text-black font-bold mb-4">
-              Hello, I'm {""}
+            <h1 className="text-5xl text-black font-bold mt-4">
+              Hi, I'm {""}
               <span className="text-black">
                 {author.name}.
               </span>
             </h1>
-            <div className="p-1 text-black prose lg:prose-xl">
+            <div className="p-1 text-black prose lg:prose-lg">
               <BlockContent
                 blocks={author.bio}
                 projectId="yfjejyjc"

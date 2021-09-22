@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "traversy-portfolio"
-  },
   "api": {
     "projectId": "yfjejyjc",
     "dataset": "production"
+  },
+  "project": {
+    "name": "traversy-portfolio"
   },
   "plugins": [
     "@sanity/base",

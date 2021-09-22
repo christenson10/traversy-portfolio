@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import sanityClient from "../client.js";
 
 export default function Project() {
@@ -51,7 +50,7 @@ export default function Project() {
                     {new Date(project.date).toLocaleDateString()}
                   </span> */}
                   <span>
-                    <strong className="font-bold">Type</strong>: {project.place}
+                    <strong className="font-bold">Type</strong>: {project.projectType}
                   </span>
                   <span>
                     <strong className="font-bold">Description</strong>:{" "}
