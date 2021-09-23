@@ -30,20 +30,20 @@ export default function About() {
     <main>
       <img src={mountainsphoto} alt="Mountains" className="absolute object-cover w-full h-full" />
       <div className="p-6 items-center justify-center h-screen lg:pt-12 container mx-auto relative">
-        <section className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-2xl lg:flex p-6 pb-0">
+        <section className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-2xl lg:flex p-8 pb-0">
           <img
             src={urlFor(author.authorImage).url()}
-            className="rounded w-32 h-32 lg:w-60 lg:h-60 mr-5"
+            className="p-2 rounded w-32 h-32 lg:w-60 lg:h-60 mr-6"
             alt={author.name}
           />
           <div className="max-w-screen-2xl text-lg flex flex-col justify-center">
-            <h1 className="pt-4 text-5xl text-black font-bold mt-0">
+            <h1 className="text-5xl text-black font-bold">
               Hi, I'm {""}
               <span className="text-black">
                 {author.name}.
               </span>
             </h1>
-            <div className="p-1 text-black prose lg:prose-lg">
+            <div className="mb-4 p-1 text-black prose lg:prose-lg max-w-max">
               <BlockContent
                 blocks={author.bio}
                 projectId="yfjejyjc"

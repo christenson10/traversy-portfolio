@@ -28,8 +28,8 @@ export default function Post() {
     <main className="bg-white-100 min-h-screen p-5">
       <section className="container mx-auto">
         <h1 className="text-3xl flex justify-center p-1 font-bold">Captain's Logbook.</h1>
-        <h2 className="text-md text-gray-600 flex justify-center mb-6">
-          Ramblings. Musings. Life.
+        <h2 className="text-md text-black flex justify-center mb-6">
+          Ramblings. Musings. Probably Food.
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
@@ -49,7 +49,7 @@ export default function Post() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-gray-800 text-lg font-bold px-2 py-1 bg-yellow-300 text-black-100 bg-opacity-90 rounded">
+                      <h3 className="text-black text-lg font-bold px-2 py-2 bg-yellow-300 text-black bg-opacity-80 rounded">
                         {post.title}
                       </h3>
                     </span>
